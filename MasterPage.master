@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+           <link rel="Stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="script/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="script/Map.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script type="text/javascript" src="script/jquery.maskedinput-1.3.1.min_.js"></script>
+        <script type="text/javascript">
+            function funfordefautenterkey1(btn, event) {
+                if (document.all) {
+                    if (event.keyCode == 13) {
+                        event.returnValue = false;
+                        event.cancel = true;
+                        btn.click();
+                    }
+                }
+            }
+        </script>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="content">
+    <form id="form1" runat="server">
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <div id="header">
+                <p>
+                    <br />
+                </p>
+                <div id="panels">
+                    <asp:Panel ID="Panel1" runat="server">
+                        <asp:Label ID="LabelUsername" runat="server" Text="Username:"></asp:Label>
+                        <br />
+                        <asp:TextBox ID="TextBoxUsername" runat="server" Width="150px"></asp:TextBox>
+                        <br />
+                        <asp:Label ID="LabelPassword" runat="server" Text="Password:"></asp:Label>
+                        <br />
+                        <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" Width="150px"></asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:CheckBox ID="CheckBoxRemember" runat="server" Text="Remember Me" />
+                        <br />
+                        <asp:Button ID="ButtonLogin" runat="server" Text="Login" Width="109px" OnClick="ButtonLogin_Click" />
+                    </asp:Panel>
+                </div>
+                <div id="banner">
+                    <img alt=" Welcome To Product Provider" src="images/logo.png" />
+                </div>
+                <asp:Panel ID="Panelsearch" runat="server" DefaultButton="ButtonSearch">
+                    <div id="search">
+                        <asp:TextBox ID="TextBoxSearch" runat="server" Font-Italic="True" Font-Overline="False" Font-Size="Large" Font-Strikeout="False" Font-Underline="False" ForeColor="#459649" Height="31px" style="margin-left: 0px" Width="128px"></asp:TextBox>
+                        &nbsp;<asp:Button ID="ButtonSearch" runat="server" Text="Search" Height="36px" OnClick="ButtonSearch_Click" Width="55px" ForeColor="White" BackColor="#459649" />
+                    </div>
+                </asp:Panel>
+                <div id="menu">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Index.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Register.aspx" Text="Register" Value="Register"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <div style="clear:both;">
+            </div>
+            <div id="leftsidebar">
+                <h3>
+                    <asp:Label ID="LabelCategory" runat="server" Text="Categories"></asp:Label>
+                </h3>
+                <div id="category">
+                    <asp:Menu ID="Menu2" runat="server" >
+                    </asp:Menu>
+                </div>
+            </div>
+
+        </asp:ContentPlaceHolder>
+ <div id="ContentPlaceHolder_2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+     </div>
+
+    </form>
+                    <div style="clear:both;"></div>
+        <div id="footer">
+<a href="Index.aspx"><img style="float:right;margin-top:25px; margin-right:10px; width:50px; height:50px" src="images/twitterlogo.png" /></a><a href="Index.aspx"> <img style="float:right; margin-top:25px; margin-right:10px; width:50px; height:50px" src="images/facebooklogo.png" /> </a>
+          </br><center><a style="color:#fff; font-size:18pt"><b>PRODUCTION PROVIDER </b></a></center> </br> <center><a style="color:#fff">Copyright © 2017 Furkan Karanfil</a></center>
+                  </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿body {
+background-color:#cac3c3;
+font-family:Tahoma;
+}
+#content {
+width:900px;
+background-color:#FFFFFF;
+margin:0px auto;
+overflow:auto;
+min-height: 1000px;
+height: auto;
+}
+#search {
+    float:left;
+    margin-left:100px;
+}
+#header{
+height:200px;
+
+}      
+#footer{
+vertical-align:baseline;
+width:auto;
+height:100px;
+background-color:#2b78e3;
+margin:0px auto;
+margin-top:150px;
+}
+#ContentPlaceHolder_2 {
+float:left;
+width:610px; 
+height:auto;
+margin-left:37px;
+margin-top:20px;
+}
+#panels {
+color:white;
+margin-left:25px;
+margin-top:10px;
+border:1px solid;
+text-align:center;
+width:200px;
+height:168px;
+background-color:#459649;
+float:left;
+font-size:large;
+}
+#banner {
+float:left;
+margin-left:40px;
+margin-top:10px;     
+clear:right;
+}
+#ContentPlaceHolder1_Menu1_SkipLink {
+display:none;
+}
+
+#menu {
+float:left;
+margin-top:50px;
+margin-left:40px;
+font-family:Tahoma;
+font-size:large;
+background-color:#2b78e3;
+width:590px;
+padding:10px;
+}
+#menu a {
+color:white;
+font-weight:bold;
+font-family:Tahoma;
+margin-left:40px;
+padding:5px;
+}
+#menu a:hover {
+background-color:#00c8ff;
+}
+#ContentPlaceHolder1_ButtonLogin {
+border-radius:7px;
+}
+#leftsidebar {
+float:left;
+margin-left:25px;
+margin-top:20px;
+}
+#leftsidebar h3{
+width:200px;
+padding:3px;
+background-color:#686666;
+color:white;
+}
+#category {
+margin-top:-17px;
+background-color:#2b78e3;
+}
+#category a{
+color:white;
+font-weight:bold;
+font-family:Tahoma;
+padding:10px;
+border-bottom: 1px solid white;
+}
+#category a:hover{
+background-color:#00c8ff;
+}
+#ContentPlaceHolder1_Menu2 ul {
+  width: 205px !important;
+}
+#ContentPlaceHolder1_Menu2_SkipLink {
+display:none;
+}
+#middleside {
+
+}
+.pdbtndetail {
+float:right;
+margin-top:60px;
+background-color:#459649;
+color:white;
+height:25px;
+padding:0px 3px 0px 3px;
+font-size:large;
+text-decoration:underline;
+font-family:Tahoma;
+}
+.lblPName {
+color:#459649;
+font-weight:bold;
+}
+.gridView img {
+width: 145px;
+height: 145px;
+}
+#gridviewcomment {
+float:left;
+width:600px;
+
+}
+
+#map {
+width:400px;
+height:200px;
+}
+
